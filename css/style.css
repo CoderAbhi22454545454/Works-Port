@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+:root{
+    --dark:#161C2D;
+    --d: 700ms;
+    --box-x-padding: 2rem;
+    --box-y-padding: 2rem;
+
+}
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+    color: var(--dark);
+    box-sizing: border-box;
+}
+
+
+html {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection{
+  color: rgb(218, 185, 40);
+}
+header{
+    margin: 1% 4%;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav a {
+    text-decoration: none;
+    font-weight:700;
+    text-transform: uppercase;
+   margin-left: 1.5rem;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.hero{
+    display: flex;
+    margin: 7% 15%;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+}
+.hero h1 {
+    font-size:4.5rem;
+    font-weight:700;
+    /* width: 70%; */
+}
+
+.hero h5 {
+    font-size:0.95rem;
+    text-transform: uppercase;
+    margin-bottom : 1.2rem;
+}
+.btn.btn-primary {
+    padding: 0.92rem 1rem;
+    background: #F6A015;
+    border-radius: 32.5px;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-size: 0.812rem;
+    border:none;
+    outline: none;
+    margin-top:1.85rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.btn.btn-primary:hover{
+    background: #2c2822;
+  }
+.btn.btn-secondary {
+    padding: 0.92rem 1rem;
+    background: #F6A015;
+    border-radius: 32.5px;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-size: 0.812rem;
+    border:none;
+    outline: none;
+    margin-top:1.85rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.btn.btn-primary:hover{
+    background: #17181b;
+    letter-spacing: 0.35rem;
+  }
+.btn.btn-secondary:hover{
+  background: #17181b;
+    letter-spacing: 0.35rem;
+  }
+
+
+i {
+    color: #fff;
+    margin-left:0.5rem;
+}
+
+.right img {
+   max-width: 100%;
+}
+
+.fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+@media only screen and (max-width: 1300px) {
+    .hero{
+        display: flex;
+        margin: 7% 15%;
+        /* flex-wrap: wrap-reverse; */
+        line-height: 1.3;
+    }
+    .hero h1 {
+        font-size:3.5rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .hero{
+        display: flex;
+        margin: 7% 15%;
+        flex-wrap: wrap-reverse;
+        line-height: 1;
+    }
+  
+    .hero h5 {
+        margin: 1.2rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header{
+        margin: 3.2% 4%;
+    }
+    .hero{
+        display: flex;
+        margin: 20% 1%;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.3;
+    }
+    .hero h1{
+        font-size:2.7rem;
+    }
+    .hero h5 {
+        font-size:0.75rem;
+    }
+
+    .work-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;   
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    header{
+        margin: 3.2% 1%;
+    }
+    .hero h1{
+        font-size:2.4rem;
+    }
+    #card h1 {
+        font-size:2rem;
+    }
+}
+
+
+#card {
+    margin-top:2rem;
+}
+.work h2{
+    text-align: center;
+     font-weight: 300;
+      color: rgb(4, 4, 4); 
+     margin: 12rem 0rem;
+     position: relative;
+     text-decoration: underline;
+}
+
+  @media (min-width: 40em) {
+    :root {
+      --box-y-padding: 4rem;
+    }
+  }
+  @media (min-width: 60em) {
+    :root {
+      --box-x-padding: 3rem;
+      --box-y-padding: 6rem;
+    }
+  }
+  @media (min-width: 40em) {
+    section {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: 4fr 4fr 5fr;
+      grid-template-areas: '. . title' 'img img content' 'img img .';
+      max-width: 1000px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    section::after {
+      content: '';
+      grid-column: 2/-1;
+      grid-row: 1/3;
+      position: relative;
+      z-index: -1;
+      background: #fff;
+      box-shadow: 0 0.2em 1em rgba(61,48,41,0.2);
+    }
+    #card h1 {
+      grid-area: title;
+      padding-top: var(--box-y-padding);
+      padding-left: var(--box-x-padding);
+    }
+    .content {
+      grid-area: content;
+      padding-bottom: var(--box-y-padding);
+      padding-left: var(--box-x-padding);
+      padding-right: var(--box-x-padding);
+    }
+    .img {
+      grid-area: img;
+    }
+  }
+
+ #card h1 {
+    font-size: 3em;
+    margin: 0 0 1rem;
+    /* font-family: serif; */
+    position: relative;
+  }
+  #card h1::after {
+    content: '';
+    position: absolute;
+    width: 6rem;
+    background-color: #ccc;
+    height: 2px;
+    top: 0;
+    left: 0;
+  }
+  #card h5{
+      margin-bottom: 1rem;
+     font-weight: 400;
+    text-transform: lowercase;
+    color: rgb(151, 151, 151);
+  }
+  #card h5 span{
+   font-weight: 800;
+   text-transform: capitalize;
+   color: rgb(68, 63, 63);
+
+  }
+  @media (min-width: 40em) {
+   #card h1::after {
+      left: var(--box-x-padding);
+      top: var(--box-y-padding);
+    }
+  }
+  .content {
+    color: #4d4d4d;
+    margin-bottom: var(--box-y-padding);
+  }
+  @media (min-width: 40em) {
+    .content {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: var(--box-y-padding);
+    line-height: 1.5;
+    font-weight: 500;
+    color :#505050;
+  }
+  .content a {
+    text-decoration: none;
+    border: 1px solid #c5c5c5;
+    border-radius: 1em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color:i;
+    display: inline-block;
+    background-color: #fff;
+    outline: none;
+  }
+  .content a:hover{
+    background:  #505050;
+    COLOR: #fff;
+    outline: none;
+  }
+  .img {
+    position: relative;
+  }
+  .img a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  #card img {
+    max-width: 100%;
+    vertical-align: middle;
+    box-shadow: 0 0.2em 1.2em rgba(61,48,41,0.1);
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ea4c89;
+    color: #fff;
+    padding: 0.5em 1em;
+  }
+
+
+#contact{
+    margin:10% 26%;
+    text-align: center;
+}
+#contact h1{
+    font-size:5rem;
+}
+.contact-title{
+    text-align: center;
+}
+#contact i{
+    color: #F6A015;
+}
+#contact p{
+    color: var(--dark);
+    font-size:1rem;
+    margin-left: 0.5rem;
+}
+#contact .con i{
+   color: #fff;
+   padding-right:1rem;
+}
+@media only screen and (max-width: 500px) {
+    #card h1 {
+        font-size:2.2rem;
+    } 
+    #card{
+        margin: 4rem .5rem;
+    }
+    .work h2{
+        text-align: center;
+         font-weight: 300;
+          color: rgb(4, 4, 4); 
+         margin: 5rem 0rem;
+    }
+    #contact{
+        margin:25% 2% 0% 2%;
+        text-align: center;
+    }
+    #contact h1{
+        font-size:2rem;
+    }
+    .logo img{
+      width: 70%;
+    }
+    header{
+      flex-direction: column;
+      text-align: center;
+    }
+     .nav {
+       display: none;
+     }
+    .nav a{
+       font-size:0.70rem;
+       padding-top: 10rem;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20%;
+}
+footer h6 {
+     font-size: 1rem;
+     text-transform: uppercase;
+     font-weight: 700;
+}
+@media only screen and (min-width: 1500px) { 
+    footer {
+        text-align: center;
+        margin-top: 15%;
+    }
+}
