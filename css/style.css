@@ -221,11 +221,13 @@ i {
 }
 .work h2{
     text-align: center;
-     font-weight: 300;
-      color: rgb(4, 4, 4); 
+     font-weight: 500;
+      color: var(--dark); 
      margin: 12rem 0rem;
      position: relative;
-     text-decoration: underline;
+     font-size:1.5rem;
+     text-transform: uppercase; 
+     /* text-decoration: underline; */
 }
 
   @media (min-width: 40em) {
